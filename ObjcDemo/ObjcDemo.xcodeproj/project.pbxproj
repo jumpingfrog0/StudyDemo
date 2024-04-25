@@ -14,6 +14,7 @@
 		B66D3C9F2BB48550009F4BEB /* ThreadTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D3C9E2BB48550009F4BEB /* ThreadTestCase.m */; };
 		B66D41422BC1AF6B009F4BEB /* OtherTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D41412BC1AF6B009F4BEB /* OtherTestCase.m */; };
 		B66D43962BC559C9009F4BEB /* MemoryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D43952BC559C9009F4BEB /* MemoryTestCase.m */; };
+		B66F2A7C2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F2A7B2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m */; };
 		B6786B3F2B979792007B07C7 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B6786B3E2B979792007B07C7 /* Student.m */; };
 		B6786B422B97979E007B07C7 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = B6786B412B97979E007B07C7 /* Teacher.m */; };
 		B6C2C9522B64337400C0B8B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2C9512B64337400C0B8B4 /* AppDelegate.m */; };
@@ -23,6 +24,8 @@
 		B6C2C95D2B64337600C0B8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C2C95C2B64337600C0B8B4 /* Assets.xcassets */; };
 		B6C2C9602B64337600C0B8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C2C95E2B64337600C0B8B4 /* LaunchScreen.storyboard */; };
 		B6C2C9632B64337600C0B8B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2C9622B64337600C0B8B4 /* main.m */; };
+		B6F6719B2BCA87AB00458D46 /* JFThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */; };
+		B6FCDC3E2BCAE6150012B22E /* AliveThread.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCDC3D2BCAE6150012B22E /* AliveThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,8 @@
 		B66D41412BC1AF6B009F4BEB /* OtherTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherTestCase.m; sourceTree = "<group>"; };
 		B66D43942BC559C9009F4BEB /* MemoryTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryTestCase.h; sourceTree = "<group>"; };
 		B66D43952BC559C9009F4BEB /* MemoryTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTestCase.m; sourceTree = "<group>"; };
+		B66F2A7A2BCC16CD0003CC99 /* JFAliveThreadTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFAliveThreadTestViewController.h; sourceTree = "<group>"; };
+		B66F2A7B2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFAliveThreadTestViewController.m; sourceTree = "<group>"; };
 		B6786B3D2B979792007B07C7 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		B6786B3E2B979792007B07C7 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		B6786B402B97979E007B07C7 /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
@@ -56,6 +61,10 @@
 		B6C2C95F2B64337600C0B8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6C2C9612B64337600C0B8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6C2C9622B64337600C0B8B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6F671992BCA87AB00458D46 /* JFThreadTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFThreadTestViewController.h; sourceTree = "<group>"; };
+		B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFThreadTestViewController.m; sourceTree = "<group>"; };
+		B6FCDC3C2BCAE6150012B22E /* AliveThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliveThread.h; sourceTree = "<group>"; };
+		B6FCDC3D2BCAE6150012B22E /* AliveThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliveThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 				B66D41412BC1AF6B009F4BEB /* OtherTestCase.m */,
 				B645797E2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.h */,
 				B645797F2B909D5100F38A9A /* JFTest_KVC_KVO_ViewController.m */,
+				B6F671992BCA87AB00458D46 /* JFThreadTestViewController.h */,
+				B6F6719A2BCA87AB00458D46 /* JFThreadTestViewController.m */,
+				B66F2A7A2BCC16CD0003CC99 /* JFAliveThreadTestViewController.h */,
+				B66F2A7B2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m */,
+				B6FCDC3C2BCAE6150012B22E /* AliveThread.h */,
+				B6FCDC3D2BCAE6150012B22E /* AliveThread.m */,
 				B645797B2B8FD88800F38A9A /* JFPerson.h */,
 				B645797C2B8FD88800F38A9A /* JFPerson.m */,
 				B6786B3D2B979792007B07C7 /* Student.h */,
@@ -191,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FCDC3E2BCAE6150012B22E /* AliveThread.m in Sources */,
+				B6F6719B2BCA87AB00458D46 /* JFThreadTestViewController.m in Sources */,
 				B66D43962BC559C9009F4BEB /* MemoryTestCase.m in Sources */,
 				B6786B422B97979E007B07C7 /* Teacher.m in Sources */,
 				B66D3C992BB483BD009F4BEB /* BlockTestCase.m in Sources */,
@@ -201,6 +218,7 @@
 				B6786B3F2B979792007B07C7 /* Student.m in Sources */,
 				B6C2C9552B64337400C0B8B4 /* SceneDelegate.m in Sources */,
 				B66D41422BC1AF6B009F4BEB /* OtherTestCase.m in Sources */,
+				B66F2A7C2BCC16CD0003CC99 /* JFAliveThreadTestViewController.m in Sources */,
 				B66D3C9C2BB48490009F4BEB /* RuntimeTestCase.m in Sources */,
 				B66D3C9F2BB48550009F4BEB /* ThreadTestCase.m in Sources */,
 				B645797D2B8FD88800F38A9A /* JFPerson.m in Sources */,

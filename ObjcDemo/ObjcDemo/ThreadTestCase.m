@@ -7,6 +7,8 @@
 
 #import "ThreadTestCase.h"
 #import "JFPerson.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ThreadTestCase ()
 @property (nonatomic, strong) NSArray *nonatomicArr;
@@ -15,6 +17,7 @@
 @property (nonatomic, strong) JFPerson *person;
 
 @property (nonatomic, strong) dispatch_semaphore_t dispatchSemaphore;
+@property (nonatomic, strong) NSThread *innerThread;
 @end
 
 @implementation ThreadTestCase
@@ -26,14 +29,15 @@
 //    [self testAtomic2];
 //    [self readWriteTest];
 //    [self liveThreadTest];
+    [self testSemaphore];
     
-    UIBackgroundTaskIdentifier bgTask = UIBackgroundTaskInvalid;
-    bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
-         [[UIApplication sharedApplication] endBackgroundTask:bgTask];
-         bgTask = UIBackgroundTaskInvalid;
-    }];
+//    __block UIBackgroundTaskIdentifier bgTask = UIBackgroundTaskInvalid;
+//    bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+//         [[UIApplication sharedApplication] endBackgroundTask:bgTask];
+//         bgTask = UIBackgroundTaskInvalid;
+//    }];
     
-    [self performSelector:@selector(test) withObject:nil afterDelay:10.0];
+//    [self performSelector:@selector(test) withObject:nil afterDelay:10.0];
 }
 
 /// 多线程奔溃
@@ -122,6 +126,38 @@
 //            }
         };
     });
+}
+
+- (void)testSemaphore
+{
+    [self performSelector:@selector(afterTest) withObject:nil afterDelay:2];
+    
+    dispatch_queue_t queue = dispatch_queue_create("com.test.liveThread", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_async(queue, ^{
+        
+        int semaphoreThreshold = 10;
+        self.dispatchSemaphore = dispatch_semaphore_create(0);
+        
+        long semaphoreWait = dispatch_semaphore_wait(self.dispatchSemaphore,
+                                                     dispatch_time(DISPATCH_TIME_NOW, semaphoreThreshold * NSEC_PER_SEC));
+        
+        if (semaphoreWait != 0)
+        {
+            NSLog(@"111");
+        } else {
+            NSLog(@"222");
+        }
+    });
+}
+
+- (void)afterTest
+{
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"333");
+        dispatch_semaphore_signal(self.dispatchSemaphore);
+        NSLog(@"444");
+//    });
 }
 
 @end

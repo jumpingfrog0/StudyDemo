@@ -7,7 +7,10 @@
 
 #import "ViewController.h"
 #import <objc/runtime.h>
+
 #import "JFTest_KVC_KVO_ViewController.h"
+#import "JFThreadTestViewController.h"
+#import "JFAliveThreadTestViewController.h"
 
 #import "BlockTestCase.h"
 #import "RuntimeTestCase.h"
@@ -225,6 +228,14 @@ union isa_t_2 {
     [button addTarget:self action:@selector(jumpToKVC_KVO_Page) forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(100, 100, 100, 50);
     [self.view addSubview:button];
+    
+    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button2 setTitle:@"Test Live Thread" forState:UIControlStateNormal];
+    [button2.titleLabel setFont:[UIFont systemFontOfSize:14.0]];
+    [button2 setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(openLiveThreadPage) forControlEvents:UIControlEventTouchUpInside];
+    button2.frame = CGRectMake(100, 200, 200, 50);
+    [self.view addSubview:button2];
 }
 
 - (void)jumpToKVC_KVO_Page
@@ -233,7 +244,11 @@ union isa_t_2 {
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+- (void)openLiveThreadPage
+{
+    JFThreadTestViewController *vc = [JFThreadTestViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 
