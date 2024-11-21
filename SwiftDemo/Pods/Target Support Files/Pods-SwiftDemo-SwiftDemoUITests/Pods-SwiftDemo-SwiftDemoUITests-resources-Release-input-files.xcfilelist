@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftDemo-SwiftDemoUITests/Pods-SwiftDemo-SwiftDemoUITests-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit_Privacy.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SwifterSwift/SwifterSwift_Privacy.bundle

@@ -1,0 +1,67 @@
+   2.5780s   ▸ Clean Succeeded
+   0.0013s   ▸ Processing ResourceBundle-Alamofire-Alamofire-Info.plist
+   0.0003s   ▸ Copying /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.bundle/PrivacyInfo.xcprivacy
+   0.0021s   ▸ Copying Alamofire-umbrella.h
+   0.0003s   ▸ Touching Alamofire.bundle (in target 'Alamofire-Alamofire' from project 'Pods')
+   0.0000s   ▸ Processing Alamofire-Info.plist
+   3.6955s   ▸ Copying /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Alamofire.bundle
+   0.0002s   ▸ Compiling Alamofire_vers.c
+   0.0002s   ▸ Compiling Alamofire-dummy.m
+   0.0003s   ▸ Compiling Alamofire_vers.c
+   0.0009s   ▸ Compiling Alamofire-dummy.m
+   0.0004s   ▸ Copying Pods-SwiftDemo-umbrella.h
+   0.0012s   ▸ Compiling Pods-SwiftDemo-dummy.m
+   0.0003s   ▸ Compiling Pods-SwiftDemo-dummy.m
+   0.0002s   ▸ Compiling Pods_SwiftDemo_vers.c
+   0.0023s   ▸ Compiling Pods_SwiftDemo_vers.c
+   0.0026s   ▸ Linking Alamofire
+   0.2075s   ▸ Linking Alamofire
+   0.0029s   ▸ Touching Alamofire.framework (in target 'Alamofire' from project 'Pods')
+   0.0283s   ▸ Processing Pods-SwiftDemo-Info.plist
+   0.0022s   ▸ Touching Pods_SwiftDemo.framework (in target 'Pods-SwiftDemo' from project 'Pods')
+   0.1944s   ▸ Running script '[CP] Check Pods Manifest.lock'
+   0.3725s   ▸ Compiling Main.storyboard
+   0.9074s   ▸ Compiling LaunchScreen.storyboard
+   0.0001s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0009s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0025s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0022s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0021s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0021s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0020s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0020s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0029s                 ^
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0002s                 ^
+   0.0009s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/arm64/SwiftDemo.swiftmodule: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0001s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/arm64/SwiftDemo.swiftdoc: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0002s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/x86_64/SwiftDemo.swiftmodule: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0002s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/x86_64/SwiftDemo.swiftdoc: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0002s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/x86_64/SwiftDemo.abi.json: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0002s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/arm64/SwiftDemo.abi.json: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0002s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/x86_64/SwiftDemo.swiftsourceinfo: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0021s   ❌  error: /Users/lizhi/Library/Developer/Xcode/DerivedData/SwiftDemo-avhadzgjbbhdkjeeyczlxelqxajm/Build/Intermediates.noindex/SwiftDemo.build/Debug-iphonesimulator/SwiftDemo.build/Objects-normal/arm64/SwiftDemo.swiftsourceinfo: No such file or directory (in target 'SwiftDemo' from project 'SwiftDemo')
+   0.0000s   ❌  /Users/lizhi/Desktop/workspaces/SwiftDemo/SwiftDemo/ViewController.swift:15:15: unterminated string literal
+   0.0000s           print("SwiftDemo)
+   0.0015s                 ^
+   0.0005s   ▸ Processing Info.plist
+   0.2767s   ▸ Running script '[CP] Embed Pods Frameworks'
+   0.0052s   ▸ Touching SwiftDemo.app (in target 'SwiftDemo' from project 'SwiftDemo')
+             
+     Total   8.3153s

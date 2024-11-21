@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '12.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'ImageRenderDemo' do
+#  use_frameworks!
+  
+  pod 'Alamofire', '5.10.1'
+  pod 'SnapKit'
+
+
+end

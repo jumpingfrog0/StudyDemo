@@ -1,0 +1,6 @@
+module Pods_ImageRenderDemo {
+  umbrella header "Pods-ImageRenderDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
