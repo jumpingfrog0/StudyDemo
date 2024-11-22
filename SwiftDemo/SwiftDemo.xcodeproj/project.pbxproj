@@ -15,13 +15,15 @@
 		6D58DC542CEF30D000198DA2 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58DC532CEF30CE00198DA2 /* ViewController2.swift */; };
 		6DA6D0552C606F7800BD1CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0542C606F7800BD1CBA /* AppDelegate.swift */; };
 		6DA6D0572C606F7800BD1CBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0562C606F7800BD1CBA /* SceneDelegate.swift */; };
-		6DA6D0592C606F7800BD1CBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0582C606F7800BD1CBA /* ViewController.swift */; };
+		6DA6D0592C606F7800BD1CBA /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0582C606F7800BD1CBA /* ViewController3.swift */; };
 		6DA6D05C2C606F7800BD1CBA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DA6D05B2C606F7800BD1CBA /* Base */; };
 		6DA6D05E2C606F7900BD1CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA6D05D2C606F7900BD1CBA /* Assets.xcassets */; };
 		6DA6D0612C606F7900BD1CBA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6DA6D0602C606F7900BD1CBA /* Base */; };
 		6DA6D06C2C606F7900BD1CBA /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D06B2C606F7900BD1CBA /* SwiftDemoTests.swift */; };
 		6DA6D0762C606F7900BD1CBA /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0752C606F7900BD1CBA /* SwiftDemoUITests.swift */; };
 		6DA6D0782C606F7900BD1CBA /* SwiftDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6D0772C606F7900BD1CBA /* SwiftDemoUITestsLaunchTests.swift */; };
+		6DC3B4622CF0253E009761FA /* ChatSwipeToReplyRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3B4612CF0253C009761FA /* ChatSwipeToReplyRecognizer.swift */; };
+		6DC3B4642CF02E14009761FA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3B4632CF02E12009761FA /* ChatViewController.swift */; };
 		FE4AF160C9D7CE46F458EDD4 /* libPods-SwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3993496296BECD26BB57EB /* libPods-SwiftDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,7 @@
 		6DA6D0512C606F7800BD1CBA /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA6D0542C606F7800BD1CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA6D0562C606F7800BD1CBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DA6D0582C606F7800BD1CBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DA6D0582C606F7800BD1CBA /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		6DA6D05B2C606F7800BD1CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DA6D05D2C606F7900BD1CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA6D0602C606F7900BD1CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		6DA6D0712C606F7900BD1CBA /* SwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA6D0752C606F7900BD1CBA /* SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITests.swift; sourceTree = "<group>"; };
 		6DA6D0772C606F7900BD1CBA /* SwiftDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DC3B4612CF0253C009761FA /* ChatSwipeToReplyRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSwipeToReplyRecognizer.swift; sourceTree = "<group>"; };
+		6DC3B4632CF02E12009761FA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A58F9366F90417315C848AA7 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A98931BE4B2BC8245A8DF767 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0E9A614EC12798B51F136C /* Pods-SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 			children = (
 				6DA6D0542C606F7800BD1CBA /* AppDelegate.swift */,
 				6DA6D0562C606F7800BD1CBA /* SceneDelegate.swift */,
-				6DA6D0582C606F7800BD1CBA /* ViewController.swift */,
+				6DC3B4632CF02E12009761FA /* ChatViewController.swift */,
+				6DA6D0582C606F7800BD1CBA /* ViewController3.swift */,
+				6DC3B4612CF0253C009761FA /* ChatSwipeToReplyRecognizer.swift */,
 				6D58DC532CEF30CE00198DA2 /* ViewController2.swift */,
 				6D53892B2CCB9DD400E1245E /* VerificaitonCodeInputView.swift */,
 				6D5389332CCBACF300E1245E /* OTPInputView.swift */,
@@ -426,8 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA6D0592C606F7800BD1CBA /* ViewController.swift in Sources */,
+				6DA6D0592C606F7800BD1CBA /* ViewController3.swift in Sources */,
 				6DA6D0552C606F7800BD1CBA /* AppDelegate.swift in Sources */,
+				6DC3B4622CF0253E009761FA /* ChatSwipeToReplyRecognizer.swift in Sources */,
+				6DC3B4642CF02E14009761FA /* ChatViewController.swift in Sources */,
 				6D58DC542CEF30D000198DA2 /* ViewController2.swift in Sources */,
 				6D5389322CCBA7EB00E1245E /* StringExtension.swift in Sources */,
 				6D5389342CCBACF400E1245E /* OTPInputView.swift in Sources */,
