@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Flutter 模块
+flutter_application_path = '../my_flutter'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+# 调试工具
+#def pod_debug_tool
+#  pod 'LookinServer', :subspecs => ['Swift'], :configurations => ['Debug']
+#end
+
+target 'FlutterDemoMain' do
+  use_frameworks!
+
+  # install Flutter
+  install_all_flutter_pods(flutter_application_path)
+  
+#  pod_debug_tool
+
+end
+
+post_install do |installer|
+  flutter_post_install(installer) if defined?(flutter_post_install)
+  
+#  installer.pods_project.build_configurations.each do |config|
+#      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+#  end
+end
