@@ -18,9 +18,23 @@
 
 @property (nonatomic, strong) dispatch_semaphore_t dispatchSemaphore;
 @property (nonatomic, strong) NSThread *innerThread;
+
+@property (nonatomic, strong) NSMutableArray *mArray;
+
+@property (nonatomic, strong) dispatch_queue_t ioQueue;
+
 @end
 
 @implementation ThreadTestCase
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _mArray = [NSMutableArray array];
+        _ioQueue = dispatch_queue_create("com.famo.privilege.queue", DISPATCH_QUEUE_SERIAL);
+    }
+    return self;
+}
 
 - (void)runTest
 {
@@ -29,7 +43,7 @@
 //    [self testAtomic2];
 //    [self readWriteTest];
 //    [self liveThreadTest];
-    [self testSemaphore];
+//    [self testSemaphore];
     
 //    __block UIBackgroundTaskIdentifier bgTask = UIBackgroundTaskInvalid;
 //    bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
@@ -38,6 +52,8 @@
 //    }];
     
 //    [self performSelector:@selector(test) withObject:nil afterDelay:10.0];
+    
+    [self test2];
 }
 
 /// 多线程奔溃
@@ -102,11 +118,6 @@
     }
 }
 
-- (void)test
-{
-    NSLog(@"test");
-}
-
 /// 线程保活
 - (void)liveThreadTest
 {
@@ -158,6 +169,47 @@
         dispatch_semaphore_signal(self.dispatchSemaphore);
         NSLog(@"444");
 //    });
+}
+
+// 测试多线程访问
+- (void)test2
+{
+    for (int i = 0; i < 100000; i++) {
+        dispatch_async(self.ioQueue, ^{
+            [self.mArray addObject:@(i)];
+            NSLog(@"子线程 - %d, thread: %@", i, [NSThread currentThread]);
+        });
+    }
+    
+    // 以下代码在主线程运行，会奔溃
+//    for (int i = 0; i < 100000; i++) {
+//        [self.mArray addObject:@(i)];
+//        NSLog(@"主线程 - %d, thread: %@", i, [NSThread currentThread]);
+//    }
+    
+    // 以下代码在主线程运行，异步任务，也会奔溃
+//    for (int i = 0; i < 100000; i++) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.mArray addObject:@(i)];
+//            NSLog(@"主线程 - %d, thread: %@", i, [NSThread currentThread]);
+//        });
+//    }
+    
+    // 以下代码在主线程运行，同步任务，肯定会奔溃
+//    for (int i = 0; i < 100000; i++) {
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            [self.mArray addObject:@(i)];
+//            NSLog(@"主线程 - %d, thread: %@", i, [NSThread currentThread]);
+//        });
+//    }
+    
+    // 以下代码因为是同步任务，在ioQueue队列中不会创建新线程，不会奔溃
+    for (int i = 0; i < 100000; i++) {
+        dispatch_sync(self.ioQueue, ^{
+            [self.mArray addObject:@(i)];
+            NSLog(@"ioQueue 线程 - %d, thread: %@", i, [NSThread currentThread]);
+        });
+    }
 }
 
 @end
