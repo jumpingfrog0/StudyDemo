@@ -12,6 +12,8 @@
 #import "JFThreadTestViewController.h"
 #import "JFAliveThreadTestViewController.h"
 
+#import "UITapDebounceManager.h"
+
 #import "BlockTestCase.h"
 #import "RuntimeTestCase.h"
 #import "ThreadTestCase.h"
@@ -250,6 +252,19 @@ union isa_t_2 {
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)test3
+{
+    // UIView 点击防抖
+    UIView *customView = [[UIView alloc] init];
+    [customView addTapDebounceWithDelay:0.5 immediateFirst:YES action:^{
+        NSLog(@"View tapped!");
+    }];
 
+    // UIButton 点击防抖
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button addTapDebounceWithDelay:0.5 immediateFirst:YES action:^{
+        NSLog(@"Button tapped!");
+    }];
+}
 
 @end
